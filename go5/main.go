@@ -33,4 +33,18 @@ func main() {
 	fmt.Println(i4)
 
 	Noretrun()
+
+	// 無名関数
+	f := func(x, y int) int {
+		return x * y
+	}
+
+	i5 := f(20, 40)
+	fmt.Println(i5)
+
+	i6 := func(x, y int) int {
+		return x * y
+	}(100, 289)
+
+	fmt.Println(i6)
 }
